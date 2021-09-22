@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>Document</title>
+</head>
+<body>
+  <h1>Widget test</h1>
+  <div id="starsona-store"></div>
+
+  <script>
+    (function (w, d, s, o, f, js, fjs) {
+        w[o] =
+            w[o] ||
+            function () {
+                (w[o].q = w[o].q || []).push(arguments);
+            };
+        (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
+        js.id = o;
+        js.src = f;
+        js.async = 1;
+        fjs.parentNode.insertBefore(js, fjs);
+    })(window, document, "script", "_hw", "https://starsona-stb-usea1.s3.amazonaws.com/widget/widget.js");
+    _hw("init", {
+        element: "starsona-store",
+        apiKey: '3ea22e66af1c06104fee8783d732f7',
+        font: 'gilroy',
+        buttonColor: '#FFFFFF',
+    });
+  </script>
+</body>
+</html>
